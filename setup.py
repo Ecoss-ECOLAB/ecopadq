@@ -2,13 +2,15 @@
 #ez_setup.use_setuptools()
 from setuptools import setup, find_packages
 setup(name='ecopadq',
-      version='0.1',
+      version='0.02',
       packages= find_packages(),
       package_data={'ecopadq':['ecopadq/tasks/templates/*.tmpl']},
       install_requires=[
           'celery',
           'requests',
           'jinja2',
+          'pymongo',
+          'pandas',
       ],
      dependency_links=[
           'http://github.com/ouinformatics/dockertask/tarball/master#egg=dockertask-0.0',
