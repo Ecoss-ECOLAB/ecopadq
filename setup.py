@@ -2,7 +2,7 @@
 #ez_setup.use_setuptools()
 from setuptools import setup, find_packages
 setup(name='ecopadq',
-      version='0.02',
+      version='0.2',
       packages= find_packages(),
       package_data={'ecopadq':['ecopadq/tasks/templates/*.tmpl']},
       install_requires=[
